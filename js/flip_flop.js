@@ -25,7 +25,7 @@ var sketch2=function(d)
 		{
 			for(var j=0;j<d.garo;j++)
 			{
-				d.pan[i][j]=parseInt(Math.random(2));
+				d.pan[i][j]=d.int(Math.random(2));
 			}
 		}
 	}
