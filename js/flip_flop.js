@@ -17,8 +17,8 @@ var sketch2=function(d)
 	};
 	d.draw=function()
 	{
+		if(d.frameCount%6==0) d.shiftPan();
 		d.drawPan();
-		if(d.frameCount%5==0) d.shiftPan();
 	};
 	d.mousePressed=function()
 	{
