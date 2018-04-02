@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
 <!--    <script src="js/grimpan.js"></script> -->
-  </head>
-  <body>
-    <div id="div_01" style="width:400px; height:400px; background-color:blue;">
-    </div>
-    <div id="div_02">
-    </div>
-  </body>
+	</head>
+	<body>
+		<div id="div_01" style="width:400px; height:400px; background-color:blue;">
+		</div>
+		<div id="div_02">
+		</div>
+		<script>
+			var sketch=function(d)
+			{
+				d.radius=0;
+				d.setup=function()
+				{
+					createCanvas(100,100);
+					background(255);
+				};
+				d.draw=function()
+				{
+					d.ellipse(width/2,height/2,d.radius,d.radius);
+					d.radius++;
+				};
+			};
+			new p5(sketch,"div_01");
+		</script>
+	</body>
 </html>
