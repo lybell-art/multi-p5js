@@ -4,7 +4,7 @@ var sketch=function(d)
 	d.buho=1;
 	d.setup=function()
 	{
-		d.createCanvas(600,600);
+		d.createCanvas(400,400);
 		d.background(255);
 	};
 	d.draw=function()
