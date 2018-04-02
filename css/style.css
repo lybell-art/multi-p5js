@@ -2,3 +2,10 @@ body
 {
 	background-color: red;
 }
+
+#div_02
+{
+	width:200px;
+	height:200px;
+	background-color:green;
+}
