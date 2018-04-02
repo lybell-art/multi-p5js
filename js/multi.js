@@ -12,7 +12,6 @@ var sketch=function(d)
 		d.ellipse(d.mouseX,d.mouseY,d.radius,d.radius);
 		if(d.radius>60||d.radius<0) d.buho=-d.buho;
 		d.radius+=d.buho;
-		console.log(d);
 	};
 };
 new p5(sketch,"div_01");
