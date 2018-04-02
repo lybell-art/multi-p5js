@@ -17,7 +17,7 @@ var sketch2=function(d)
 	};
 	d.draw=function()
 	{
-		
+		d.drawPan();
 	};
 	d.createPan=function()
 	{
