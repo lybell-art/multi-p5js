@@ -18,6 +18,7 @@ var sketch2=function(d)
 	d.draw=function()
 	{
 		d.drawPan();
+		if(d.frameCount%5==0) d.shiftPan();
 	};
 	d.mousePressed=function()
 	{
@@ -30,6 +31,17 @@ var sketch2=function(d)
 			for(var j=0;j<d.garo;j++)
 			{
 				d.pan[i][j]=parseInt(Math.random()*2);
+			}
+		}
+	};
+	d.shiftPan=function()
+	{
+		for(var i=0;i<d.sero;i++)
+		{
+			d.pan[i][d.garo-1]=parseInt(Math.random()*2);
+			for(var j=0;j<d.garo-1;j++)
+			{
+				d.pan[i][j]=d.pan[i][j+1];
 			}
 		}
 	};
