@@ -19,6 +19,10 @@ var sketch2=function(d)
 	{
 		d.drawPan();
 	};
+	d.mousePressed=function()
+	{
+		d.createPan();
+	};
 	d.createPan=function()
 	{
 		for(var i=0;i<d.sero;i++)
