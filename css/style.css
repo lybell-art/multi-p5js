@@ -8,4 +8,7 @@ body
 	width:200px;
 	height:200px;
 	background-color:green;
+	position:absolute;
+	left:500px;
+	top:100px;
 }
