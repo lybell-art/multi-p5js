@@ -19,6 +19,7 @@ var sketch2=function(d)
 	{
 		if(d.frameCount%6==0) d.shiftPan();
 		d.drawPan();
+		console.log(d.frameRate());
 	};
 	d.mousePressed=function()
 	{
