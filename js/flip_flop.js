@@ -28,6 +28,20 @@ var sketch2=function(d)
 				d.pan[i][j]=parseInt(Math.random()*2);
 			}
 		}
-	}
+	};
+	d.drawPan=function()
+	{
+		var wid=d.width/d.garo;
+		var hei=d.height/d.sero;
+		for(var i=0;i<d.sero;i++)
+		{
+			for(var j=0;j<d.garo;j++)
+			{
+				if(d.pan[i][j]==0) d.fill(0);
+				else d.fill(255);
+				d.rect(wid*j,hei*i,wid,hei);
+			}
+		}
+	};
 };
 new p5(sketch2,"div_02");
